@@ -140,3 +140,15 @@ WHERE action_date < customer_register_date
    OR action_date < shop_register_date    
    OR product_market_date < shop_register_date;    
 SET SQL_SAFE_UPDATES = 1;
+
+-- 做一些变量的描述性统计
+SELECT    
+     COUNT(DISTINCT customer_id),    
+     COUNT(action_date), MAX(action_date), MIN(action_date),    
+     COUNT(age_range), AVG(age_range), STDDEV_SAMP(age_range), MAX(age_range), MIN(age_range),    
+     COUNT(customer_level), AVG(customer_level), STDDEV_SAMP(customer_level), MAX(customer_level), MIN(customer_level),    
+     COUNT(city_level), AVG(city_level), STDDEV_SAMP(city_level), MAX(city_level), MIN(city_level),    
+     COUNT(fans_number), AVG(fans_number), STDDEV_SAMP(fans_number), MAX(fans_number), MIN(fans_number),    
+     COUNT(vip_number), AVG(vip_number), STDDEV_SAMP(vip_number), MAX(vip_number), MIN(vip_number),    
+     COUNT(shop_score), AVG(shop_score), STDDEV_SAMP(shop_score), MAX(shop_score), MIN(shop_score)    
+from jd_database_new;
