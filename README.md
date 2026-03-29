@@ -353,14 +353,14 @@ jd-user-analysis-project/
 ├── docs/
 │   ├── full_report.pdf
 │   └── sql_appendix.md
-├── images/
-│   ├── user_profile.png
-│   ├── retention.png
-│   ├── rfm.png
-│   ├── funnel.png
-│   ├── churn.png
-│   ├── category.png
-│   └── shop.png
+├── output/
+│   ├── user_profile
+│   ├── retention
+│   ├── rfm
+│   ├── funnel
+│   ├── churn
+│   ├── category
+│   └── shop
 └── data/
     └── sample/
 ```
@@ -392,31 +392,7 @@ jd-user-analysis-project/
 
 ---
 
-## 十二、可视化展示
-
-> 这里建议你放几张最有代表性的图，提升 GitHub 首页观感。
-
-### 用户画像
-![user_profile](images/user_profile.png)
-
-### 留存分析
-![retention](images/retention.png)
-
-### 漏斗分析
-![funnel](images/funnel.png)
-
-### 流失预警
-![churn](images/churn.png)
-
-### 品类分析
-![category](images/category.png)
-
-### 店铺分析
-![shop](images/shop.png)
-
----
-
-## 十三、总结
+## 十二、总结
 
 本项目以京东用户行为数据为基础，通过 SQL 完成了从**数据清洗、用户识别、行为分析、风险预警到策略输出**的完整闭环，最终实现了：
 
